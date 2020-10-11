@@ -1,0 +1,95 @@
+* {
+    color: black;
+}
+.header {
+    display: flex;
+    background-color: #0c4261;
+}
+.header_img {
+    flex: 0.37;
+}
+.header_img > img{
+   padding:20px 80px;
+   width: 200px;
+   height: 100px;
+}
+.header_Name {
+    display: flex;
+    flex: 0.63;
+    align-items:center;
+}
+.header_Name > h1 {
+    color: white;
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    .header_img {
+       display: none;
+    }   
+    .header_Name {
+        display: flex;
+        flex: 1;
+        align-items:center;
+        justify-content: center;
+    }
+    .header_Name > h1 {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+//body
+.body{
+    display: flex;
+    justify-content: center;
+    height: 71vh;
+}
+.body_contain {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    align-self: center;
+    border: 1px solid gray;
+}
+.body_contain > h3 {
+    justify-content: center;
+    color: rgb(112, 110, 110);
+}
+.body_contain > input {
+    height: 30px;
+    margin-top: 10px;
+}
+.body_contain > button {
+    height: 40px;
+    background-color: rgb(59, 224, 59);
+    margin-top: 10px;
+}
+.body_contain >img {
+    height: 90px;
+    margin-top: 20px;
+}
+// footer
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+.footer_footer {
+    display: flex;
+    height: 50px;
+    width: 100vw;
+    background-color: #0c4261;
+    background-size: fit-content;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.footer_footer > h3 >span {
+    color: goldenrod;
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    .footer_footer > h3  {
+        font-size: 12px;
+    }   
+}

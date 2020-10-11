@@ -1,0 +1,36 @@
+<div style="background-color: white;height: 100vh">
+
+    <div class="header">
+        <div class="header_img">
+        <img src='https://www.logodesign.net/logo/open-book-in-front-of-sun-in-star-2228ld.png?size=2&industry=private-school'/>
+        </div>
+        <div class="header_Name">
+        <h1>Kathmandu Sikshyalaya</h1>
+        </div>
+    </div>
+    
+    <div class="body">
+       <div class="body_container">
+           <div class="body_tableHeader">
+             <div><h3>S.N</h3></div>
+             <div><h3>Question</h3></div>
+             <div><h3>Option1(A)</h3></div>
+             <div> <h3>Option2(B)</h3></div>
+             <div><h3>Option3(C)</h3></div>
+             <div><h3>Option4(D)</h3></div>
+             <div><h3>Correct Answer</h3></div>
+             <div><h3>Action</h3></div>
+           </div>
+           <div class="body_tableHeader" *ngFor="let p of this.questions;let i = index">
+              <div><h3>{{i+1}}</h3></div>
+              <div><h3>{{this.questions[i]}}</h3></div>
+              <div><h3>{{this.As[i]}}</h3></div>
+              <div> <h3>{{this.Bs[i]}}</h3></div>
+              <div><h3>{{this.Cs[i]}}</h3></div>
+              <div><h3>{{this.Ds[i]}}</h3></div>
+              <div><h3>{{this.answers[i]}}</h3></div>
+              <div><button (click)="Edit(i+1)">Edit</button></div>  
+           </div>
+       </div>
+    </div>
+</div>    

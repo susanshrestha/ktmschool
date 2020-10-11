@@ -1,0 +1,43 @@
+
+<div style="background-color: white;height: 100vh;display: flex;flex-direction: column">
+  <div class="header">
+    <div class="header_img">
+    <img src='https://www.logodesign.net/logo/open-book-in-front-of-sun-in-star-2228ld.png?size=2&industry=private-school'/>
+    </div>
+    <div class="header_Name">
+    <h1>Kathmandu Sikshyalaya</h1>
+    </div>
+</div>
+
+<div class="body1" id="body1">
+  <div class="body1_contain">
+      <div class="loginsuccess">
+          <p>Login Successful</p>
+      </div>
+      <h3>Hello {{this.studentname}}. Welcome to Kathmandu Sikshayalaya Online Exam System.</h3>
+      <div class="rules">
+          <p>Here are some of the rules and regulations of this app.</p>
+          <p>1. This test is automated and you won't be able to return to previous question.</p>
+          <p>2. Once you successfully login, you can't log back in unless the permission of system administrator.</p>
+          <p>3. After you click on "Take a Test", the timer will start and it can't be paused or stopped.</p>
+          <p>4. After you submit your answer, you cannot go back. You'r exam will be disqualified if you click on back button.</p>
+      </div>
+      <div class="buttons">
+          <button (click)="takeExam()" class="button1" >Take a test</button>
+          <button class="button2">Quite</button>
+      </div>
+  </div>
+</div>
+
+<div class="body2" id="body2">
+    <div class="body2_container">
+    <div style="display: flex;align-items: center;justify-content: space-between">
+        <h3>Select subject</h3>
+        <select style="height:20px"  [(ngModel)]="this.select">
+        <option *ngFor="let p of this.subjects;let i = index">{{this.subjects[i+1]}}</option>
+        </select> 
+    </div>
+    <button (click)="Continue()">Continue</button>
+    </div>
+</div>
+</div>

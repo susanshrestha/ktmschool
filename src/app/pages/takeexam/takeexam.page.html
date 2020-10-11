@@ -1,0 +1,48 @@
+<div style="background-color: white;height: 100vh">
+
+  <div class="header">
+      <div class="header_img">
+      <img src='https://www.logodesign.net/logo/open-book-in-front-of-sun-in-star-2228ld.png?size=2&industry=private-school'/>
+      </div>
+      <div class="header_Name">
+      <h1>Kathmandu Sikshyalaya</h1>
+      </div>
+  </div>
+
+  <div class="body" id="body">
+      <div style="display: flex;">
+        <h1>Question no. {{this.questionno}}</h1>
+        <input contenteditable="fasle" [(ngModel)]="this.mark" type="number" style="width:100px;height:30px;margin-top: 20px;" placeholder="Enter mark"/>
+      </div>
+     <div class="body_contain">
+      <p>please selete the correct option before submitting</p>
+      <textarea [(ngModel)]="this.question" placeholder="Enter Question"></textarea> 
+          <div class="option">
+              <input containeditable="false" type="checkbox" (change)="change1($event)" />
+              <p>A.</p>
+              <input containeditable="false" class="option_input" [(ngModel)]="this.option1" placeholder="option 1"/>
+          </div>
+          <div class="option">
+               <input containeditable="false" type="checkbox" (change)="change2($event)"/>
+               <p>B.</p>
+               <input containeditable="false" class="option_input" [(ngModel)]="this.option2" placeholder="option 2"/>
+          </div>
+          <div class="option">
+               <input containeditable="false" type="checkbox" (change)="change3($event)"/> 
+               <p>C.</p>
+               <input containeditable="false" class="option_input" [(ngModel)]="this.option3" placeholder="option 3"/>
+          </div>
+          <div class="option">
+               <input containeditable="false" type="checkbox" (change)="change4($event)"/>
+               <p>D.</p>
+               <input containeditable="false" class="option_input" [(ngModel)]="this.option4" placeholder="option 4"/>
+          </div>
+          <div style="display: flex">
+          <button (click)="Submit()" class="button" >Submit</button>
+          <button (click)="finish()" style="background-color: red;margin-left:5px;" class="button" >Finish</button>
+         </div>
+      </div>
+  </div>
+  
+  
+</div>
