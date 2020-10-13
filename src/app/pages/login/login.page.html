@@ -1,11 +1,12 @@
 <div style="background-color: white;height: 100vh;">
 <div class="header">
-  <div class="header_img">
-  <img src='https://www.logodesign.net/logo/open-book-in-front-of-sun-in-star-2228ld.png?size=2&industry=private-school'/>
-  </div>
-  <div class="header_Name">
-  <h1>Kathmandu Sikshyalaya</h1>
-  </div>
+      <div class="header_img">
+        <img src='../../../assets/KTM School Logo.jpg'/>
+      </div>
+      <div class="header_Name">
+         <h1>Kathmandu Shikshyalaya</h1>
+         <h4>Tarkeshwor, Shesmati</h4>
+      </div>
 </div>
 <div class="body">
   <div class="body_contain">
@@ -16,14 +17,15 @@
       <input type="text" [(ngModel)]="this.rollno" placeholder="Roll number"  />
       <input type="text" [(ngModel)]="this.username" placeholder="Username"  />
       <input type="text" [(ngModel)]="this.password" placeholder="Password"  />
-      <button (click)="login()">Login</button>
-      <button (click)="register()">Register</button>
-      <img src='https://rehdon.edu.np/exam/images/iso.png' />
+      <div class="body_containButtonDiv">
+        <button (click)="login()">Login</button>
+        <button (click)="register()">Register</button>
+      </div>
   </div>
 </div>
 <div class="footer">
   <div class="footer_footer">
-      <h3><span>Kathmandu Sikshyalaya</span> © 2020. All Rights Reserved. Developed by <span>Susan Shrestha</span></h3>
+      <h6><span>Kathmandu Sikshyalaya</span> © 2020. All Rights Reserved. Developed by <span>Susan Shrestha</span></h6>
   </div>
 </div>
 </div>

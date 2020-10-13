@@ -1,26 +1,92 @@
 *{
     color: black;
+    font-family:Poppins;
 }
 .header {
     display: flex;
     background-color: #0c4261;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 }
 .header_img {
-    flex: 0.37;
+    flex: 0.3;
 }
 .header_img > img{
-   padding:20px 80px;
-   width: 200px;
-   height: 100px;
+   padding:10px 60px;
 }
 .header_Name {
     display: flex;
-    flex: 0.63;
+    flex: 0.7;
     align-items:center;
 }
 .header_Name > h1 {
     color: white;
 }
+.testbody{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    background: #f1f1f1;
+}
+.menu{
+    display: flex;
+    flex:0.2;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.13);
+}
+.menu > ul{
+    margin-top: 20px;
+}
+.testbody_container >h3{
+    text-align: center; 
+}
+.testbody_body{
+    display: flex;
+    flex:0.8;
+    justify-content: center;
+}
+.testbody_container {
+    display: flex;
+    
+    flex-direction: column;
+    width: 400px;
+    align-self: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
+    border-radius: 16px;
+    padding:10px;
+}
+.testbody_container >input {
+    margin-top: 10px;
+    height: 40px;
+    width: 80%;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.testbody_container > .buttonGroup > button {
+    height: 40px;
+    background: #0CC180;
+    color:white;
+    border-radius: 5px;
+    margin-top:10px;
+    width:100px;    
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
+}
+.testbody_input {
+    display: flex;
+    align-items: center;
+    padding:20px;
+}
+.testbody_input > h3{
+    margin-left: 10px;;
+}
+.checker_container {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 600px) {
     .header_img {
        display: none;
@@ -35,43 +101,10 @@
         color: white;
         font-size: 20px;
     }
-}
-
-
-
-.testbody{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 50vh;
-}
-.testbody > h1 {
-    text-align: center;
-}
-.testbody_container {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 50vh;
-    border: 1px solid gray;
-    align-self: center;
-    align-items: center;
-}
-.testbody_container >input {
-    margin-top: 20px;
-    height: 30px;
-    width: 80%;
-}
-.testbody_container > .buttonGroup > button {
-    width: 100px;
-    height:40px;
-    background-color:lightgreen;
-}
-.testbody_input {
-    display: flex;
-    align-items: center;
-}
-.checker_container {
-    display: flex;
-    justify-content: space-between;
+    .testbody{
+        background-color: white;
+    }
+    .testbody_container{
+        box-shadow: none;
+    }
 }

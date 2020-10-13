@@ -2,39 +2,54 @@
 
     <div class="header">
         <div class="header_img">
-        <img src='https://www.logodesign.net/logo/open-book-in-front-of-sun-in-star-2228ld.png?size=2&industry=private-school'/>
+            <img src='../../../assets/KTM School Logo.jpg'/>
         </div>
         <div class="header_Name">
-        <h1>Kathmandu Sikshyalaya</h1>
+            <h1>Kathmandu Sikshyalaya</h1>
         </div>
     </div>
 
 <div class="testbody">
-  <h1>Create Exam</h1>
-  
+
+ 
+  <div class="menu">
+   <ul>
+        <li>Home</li>
+        <li>Profile</li>
+        <li>Exam</li>
+        <li>Homework</li>
+        <li>Online Class</li>
+        <li>Routine</li>
+        <li>Gallery</li>
+        <li>Signout</li>
+
+      </ul>
+  </div>
+  <div class="testbody_body">
   <div class="testbody_container">
+    <h3>Create Exam</h3>
       <input style="color: black" type="text" [(ngModel)]="this.classnumber" placeholder="Class Number" />
       <input style="color: black" type="text" [(ngModel)]="this.subject" placeholder="Subject"/>
       <input style="color: black" type="date" [(ngModel)]="this.dateofexam" placeholder="Date of exam"/>
       <input style="color: black" type="time" [(ngModel)]="this.starttime" placeholder="Start time"/>
       <input style="color: black" type="time" [(ngModel)]="this.endtime" placeholder="End time"/>
       <div class="checker_container">
-       <div class="testbody_input">
-      <input type="checkbox" (change)="change($event)"/>
-      <h3 style="color:black;font-size:18px;margin-right: 5px">Objective</h3>
-      </div>
-
-      <div class="testbody_input">
-      <input type="checkbox" (change)="change1($event)" />
-      <h3 style="color:black;font-size:18px;">Written</h3>
-      </div>
+        <div class="testbody_input">
+            <input type="checkbox" (change)="change($event)"/>
+              <h3 style="color:black;font-size:18px;margin-right: 5px">Objective</h3>
+        </div> 
+        <div class="testbody_input">
+        <input type="checkbox" (change)="change1($event)" />
+        <h3 style="color:black;font-size:18px;">Written</h3>
+        </div>
       </div>
 
         <div style="display:flex" class="buttonGroup">
-        <button (click)="Start()">Start</button>
-        <button style="margin-left: 5px" (click)="Edit()">Edit</button>
+            <button (click)="Start()">Start</button>
+            <button style="margin-left: 5px" (click)="Edit()">Edit</button>
         </div> 
         
   </div>
+</div>
 </div>
 </div>
