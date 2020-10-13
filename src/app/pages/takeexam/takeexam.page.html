@@ -14,11 +14,11 @@
         <h1>Question no. {{this.questionno}}</h1>
         <input contenteditable="fasle" [(ngModel)]="this.mark" type="number" style="width:100px;height:30px;margin-top: 20px;" placeholder="Enter mark"/>
       </div>
-     <div class="body_contain">
+     <div contenteditable="false" class="body_contain">
       <p>please selete the correct option before submitting</p>
-      <textarea [(ngModel)]="this.question" placeholder="Enter Question"></textarea> 
+      <div [(ngModel)]="this.question" placeholder="Enter Question"></div> 
           <div class="option">
-              <input containeditable="false" type="checkbox" (change)="change1($event)" />
+              <input  type="checkbox" (change)="change1($event)" />
               <p>A.</p>
               <input containeditable="false" class="option_input" [(ngModel)]="this.option1" placeholder="option 1"/>
           </div>
